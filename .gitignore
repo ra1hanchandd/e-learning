@@ -1,0 +1,15 @@
+# Config sensitif
+/application/config/database.php
+
+# Cache & logs
+/application/logs/
+/application/cache/
+
+# Dependency
+/vendor/
+node_modules/
+
+# Env & editor
+.env
+.idea/
+.vscode/

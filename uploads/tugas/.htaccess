@@ -1,0 +1,15 @@
+# Deny direct access to uploaded files except allowed types
+<FilesMatch "\.(?i:pdf|doc|docx|xls|xlsx|ppt|pptx|zip|rar|jpg|jpeg|png|gif|txt)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Block PHP execution in uploads folder
+<FilesMatch "\.(?i:php|php3|php4|php5|phtml|pl|py|cgi|asp|aspx|sh)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Disable script execution
+Options -ExecCGI
+RemoveHandler .php .php3 .php4 .php5 .phtml .pl .py .cgi .asp .aspx .sh
