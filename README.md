@@ -79,4 +79,4 @@ e-learning/
 - jQuery
 
 ## Author
-E-Learning Bootcamp System - Academic Project
+E-Learning Bootcamp System - Raihan Project
